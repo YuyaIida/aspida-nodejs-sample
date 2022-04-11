@@ -1,8 +1,13 @@
 {
     "compilerOptions": {
-        "baseUrl": "./",
-        "outDir": "./dist/",
-        "rootDir": "./src/",
+        "baseUrl": ".",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "paths": {
+            "src/*": [
+                "src/*"
+            ]
+        }
     },
     "include": [
         "src/**/*.ts"
@@ -10,5 +15,5 @@
     "exclude": [
         "node_modules",
         "**/*.spec.ts"
-    ]
+    ],
 }
